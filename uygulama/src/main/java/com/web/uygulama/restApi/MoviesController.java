@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.web.uygulama.Business.IMoviesService;
 import com.web.uygulama.Entities.Movies;
-
+//Yasin Karayanık
 @RestController
 @RequestMapping("/uygulama")
 public class MoviesController {
