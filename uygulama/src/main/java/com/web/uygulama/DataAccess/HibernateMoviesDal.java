@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.web.uygulama.Entities.Movies;
 
-@Repository
+@Repository //It is a marker for any class that fulfils the role or stereotype of a repository 
 public class HibernateMoviesDal implements IMoviesDal{
 
 	private EntityManager entityManager;

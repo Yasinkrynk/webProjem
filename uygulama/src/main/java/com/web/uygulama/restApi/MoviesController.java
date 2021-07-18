@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.web.uygulama.Business.IMoviesService;
 import com.web.uygulama.Entities.Movies;
 //Yasin Karayanık
-@RestController
-@RequestMapping("/uygulama")
+@RestController//It is annotation in order to simplify the creation of RESTful web services.
+@RequestMapping("/uygulama")//This annotation maps HTTP requests to handler methods of MVC and REST controllers.
 public class MoviesController {
 	private IMoviesService moviesService;
 	
@@ -24,12 +24,12 @@ public class MoviesController {
 		this.moviesService = moviesService;
 	}
 	
-	@GetMapping("/movies")
+	@GetMapping("/movies")//for HTTP GET requests onto specific handler methods
 	public List<Movies> get(){
 		return moviesService.getAll();
 	}
 	
-	@PostMapping("/add")
+	@PostMapping("/add")//for HTTP POST requests onto specific handler methods
 	public void add(@RequestBody Movies movies) {
 		this.moviesService.add(movies);
 	}

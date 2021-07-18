@@ -8,18 +8,18 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.web.uygulama.DataAccess.IMoviesDal;
 import com.web.uygulama.Entities.Movies;
-@Service
+@Service //It is used to mark the class as a service provider.
 public class MoviesManager implements IMoviesService{
 	
 	private IMoviesDal moviesDal;
-	@Autowired
+	@Autowired //It provides more fine-grained control over where and how autowiring should be accomplished
 	public MoviesManager(IMoviesDal moviesDal) {
 		super();
 		this.moviesDal = moviesDal;
 	}
 
 	@Override
-	@Transactional
+	@Transactional //It is metadata that specifies that an interface, class, or method must have transactional semantics
 	public List<Movies> getAll() {
 		return this.moviesDal.getAll();
 	}

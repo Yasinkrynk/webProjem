@@ -6,11 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="movies")
+@Entity //It defines that a class can be mapped to a table.
+@Table(name="movies") //It allows you to specify the details of the table that will be used to persist the entity in the database
 public class Movies {
-	@Id
-	@Column(name="ID")
+	@Id//indicating the member field below is the primary key of current entity.
+	@Column(name="ID")//It is used to specify the mapped column for a persistent property or field.
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
