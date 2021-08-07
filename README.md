@@ -5,7 +5,9 @@ Bu projeyi oluşturma aşamalarım
 - Root directory/Browse(start.spring.io sayfasından indirdiğim zip dosyasını seçtim)  
 - Projemde com.web.uygulama paketi altında 4 farklı paket oluşturdum. Tüm paketlerin altındaki kodlarımı inceleyebilirsiniz.
 Filmleri tek tek kendim MySql içine kaydettim. Yaklaşık 10 tane film var. Daha sonra sql database ni javaya bağladım.
-Bağlantıyı localhost:8080 üzerinden yapıyorum.   
+Bağlantıyı localhost:8080 üzerinden yapıyorum. 
+# Güncelleme
+maven.bat ile uygulama kurulumunu başlatabilirsiniz
 ## Komutlar  
 localhost:8080/uygulama/movies -> tüm filmleri gösterir.  
 localhost:8080/uygulama/order-> filmlerin yıllarına göre sıralama yapar  
