@@ -7,8 +7,8 @@ Bu projeyi oluşturma aşamalarım
 Filmleri tek tek kendim MySql içine kaydettim. Yaklaşık 10 tane film var. Daha sonra sql database ni javaya bağladım.
 Bağlantıyı localhost:8080 üzerinden yapıyorum. 
 # Güncelleme
--maven.bat ile uygulama kurulumunu başlatabilirsiniz 
--uygulama-0.0.1-SNAPSHOT.jar adlı dosya oluştuysa tıklayıp kurulumu bitirebilirsiniz.
+maven.bat ile uygulama kurulumunu başlatabilirsiniz.  
+uygulama-0.0.1-SNAPSHOT.jar adlı dosya oluştuysa tıklayıp kurulumu bitirebilirsiniz.
 ## Komutlar  
 localhost:8080/uygulama/movies -> tüm filmleri gösterir.  
 localhost:8080/uygulama/order-> filmlerin yıllarına göre sıralama yapar  
